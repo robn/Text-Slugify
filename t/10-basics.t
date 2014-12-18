@@ -5,6 +5,7 @@ use strict;
 use Test::More;
 
 use Text::Slugify qw(slugify);
+use utf8;
 
 my @tests = (
     ''    => '',
@@ -53,6 +54,21 @@ my @tests = (
     '@#$' => '-',
     '@#$ !@^*%' => '-',
 );
+
+
+if(eval "require require Text::Unaccent::PurePerl") {
+    push @tests => (
+        'abc-ö-123' => 'abc-o-123',
+        'å-123'      => 'a-123',
+    );
+}
+else {
+    push @tests => (
+        'abc-ö-123' => 'abc-123',
+        'å-123'      => '123',
+    );
+}
+
 
 while (defined (my $s = shift @tests)) {
     my $d = shift @tests;
