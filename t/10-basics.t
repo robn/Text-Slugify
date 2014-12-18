@@ -56,7 +56,7 @@ my @tests = (
 );
 
 
-if(eval "require require Text::Unaccent::PurePerl") {
+if(eval "require Text::Unaccent::PurePerl") {
     push @tests => (
         'abc-ö-123' => 'abc-o-123',
         'å-123'      => 'a-123',
