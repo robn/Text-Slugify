@@ -1,0 +1,6 @@
+{{$NEXT}}
+ - Unaccent accented characters [CCSON]
+ - Initial test suite
+
+0.001     2014-04-16 09:11:10+10:00 Australia/Melbourne
+ - First release
