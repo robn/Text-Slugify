@@ -51,7 +51,7 @@ If you have L<Text::Unaccent::PurePerl> installed it will 'unaccent' accented ch
 
 There's probably a huge amount of inputs for which nothing sane is produced. Patches are welcome!
 
-Please submit bug reports and patches to L<https://github.com/Text-Slugify/issues>.
+Please submit bug reports and patches to L<https://github.com/robn/Text-Slugify/issues>.
 
 =head1 AUTHOR
 
