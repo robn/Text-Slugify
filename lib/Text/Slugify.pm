@@ -13,15 +13,16 @@ if(eval "require Text::Unaccent::PurePerl") {
 our @EXPORT_OK = qw(slugify);
 
 sub slugify {
-    my ($text) = @_;
+    my $text = $_[0];
 
     if($unaccent) {
         $text = Text::Unaccent::PurePerl::unac_string($text);
     }
 
     $text =~ s/[^a-z0-9]+/-/gi;
-    $text =~ s/^-?(.+?)-?$/$1/;
-    $text =~ s/^(.+)$/\L$1/;
+	$text =~ s/^-+//;
+	$text =~ s/-+$//;
+	
     return $text;
 }
 
