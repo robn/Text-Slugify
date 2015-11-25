@@ -44,7 +44,8 @@ Text::Slugify - create URL slugs from text
 
 =head1 DESCRIPTION
 
-Takes a bit of text, removes puncuation, spaces and other junk to produce a string suitable for use in a URL.
+Takes a bit of text, removes puncuation, spaces and other junk to produce a string suitable for use in a URL. This
+is commonly called slugification.
 
 If you have L<Text::Unaccent::PurePerl> installed it will 'unaccent' accented characters instead of removing them.
 
@@ -53,6 +54,10 @@ If you have L<Text::Unaccent::PurePerl> installed it will 'unaccent' accented ch
 There's probably a huge amount of inputs for which nothing sane is produced. Patches are welcome!
 
 Please submit bug reports and patches to L<https://github.com/robn/Text-Slugify/issues>.
+
+=head1 SEE ALSO
+
+L<Text2URI> with configurable separator, Moose based
 
 =head1 AUTHOR
 
