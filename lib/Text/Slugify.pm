@@ -20,8 +20,8 @@ sub slugify {
     }
 
     $text =~ s/[^a-z0-9]+/-/gi;
-	$text =~ s/^-+//;
-	$text =~ s/-+$//;
+    $text =~ s/^-+//;
+    $text =~ s/-+$//;
 	
     return $text;
 }
