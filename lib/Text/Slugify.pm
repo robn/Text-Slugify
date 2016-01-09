@@ -31,6 +31,8 @@ __END__
 
 =pod
 
+=for markdown [![Build Status](https://secure.travis-ci.org/robn/Text-Slugify.png)](http://travis-ci.org/robn/Text-Slugify)
+
 =head1 NAME
 
 Text::Slugify - create URL slugs from text
